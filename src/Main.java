@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
-        leapYear();
+        calculateLeapYear();
     }
 
-    public static void leapYear() {
+    public static void calculateLeapYear() {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите год и нажмите 'Enter'");
         int year = console.nextInt();
@@ -22,11 +22,11 @@ public class Main {
         System.out.println("Задача 2");
         int clientDeviceYear = 0;
         int clientOS = 0;
-        smartPhone(clientDeviceYear, clientOS);
+        findOutPhoneData(clientDeviceYear, clientOS);
 
     }
 
-    public static void smartPhone(int clientDeviceYear, int clientOS) {
+    public static void findOutPhoneData(int clientDeviceYear, int clientOS) {
         int iOS = 0;
         int anDroid = 1;
         Scanner console = new Scanner(System.in);
@@ -49,10 +49,10 @@ public class Main {
 
         System.out.println("Задача 3");
         int deliveryTime = 1;
-        numberOfDeliveryDays(deliveryTime);
+        calculateDeliveryTime(deliveryTime);
     }
 
-    public static int numberOfDeliveryDays(int deliveryTime) {
+    public static int calculateDeliveryTime(int deliveryTime) {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите расстояние до дома клиента и нажмите 'Enter'");
         int deliveryDistance = console.nextInt();
@@ -65,6 +65,6 @@ public class Main {
             deliveryTime = deliveryTime + 2;
             System.out.println("Для доставки потребуется дней: " + deliveryTime);
         }
-        return deliveryDistance;
+        return deliveryTime;
     }
 }
